@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HomeRoutingModule } from './home-routing.module';
+
 import { NewsComponent } from './news/news.component';
 import { NewnessComponent } from './newness/newness.component';
 import { TrendsComponent } from './trends/trends.component';
@@ -13,7 +15,8 @@ import { TrendsComponent } from './trends/trends.component';
     TrendsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    HomeRoutingModule,
   ]
 })
 export class HomeModule { }
