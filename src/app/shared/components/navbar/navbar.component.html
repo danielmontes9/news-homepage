@@ -1,1 +1,30 @@
-<p>navbar works!</p>
+<nav class="flex items-center justify-between p-4">
+	<button type="button" [routerLink]="['home']">
+		<img src="./assets/images/logo.svg" alt="LOGO">
+	</button>
+
+	<button type="button" aria-controls="mobile-menu" aria-expanded="false">
+		<img src="./assets/images/icon-menu.svg" alt="MENÚ">
+	</button>
+
+
+
+
+	<div class="bg-white absolute top-0 bottom-0 right-0 w-2/3 flex flex-col" id="mobile-menu">
+		<button type="button" class="p-4 self-end">
+			<img src="./assets/images/icon-menu-close.svg" alt="CERRAR">
+		</button>
+
+    <div class="space-y-1 px-2 pt-20 pb-3">
+      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+      <a class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
+
+      <a class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">New</a>
+
+      <a class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Popular</a>
+
+      <a class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Trending</a>
+    </div>
+  </div>
+
+</nav>
